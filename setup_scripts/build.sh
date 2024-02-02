@@ -1,0 +1,1 @@
+docker build -f CubertDockerfile -t "cubert" .
