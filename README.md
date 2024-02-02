@@ -30,4 +30,6 @@ Clone this repo onto your computer, and change the branch to foxy.
 
 ```./setup_scripts/incant.sh```
 
-```. /install/venv_3.9/bin/activate # need to use the venv for cubert``` 
+# Within the docker container, run 
+
+```. /install/venv_3.9/bin/activate && export CUVIS="Linux"# need to use the venv for cubert``` 
