@@ -31,5 +31,7 @@ Clone this repo onto your computer's ros workspace, and change the branch to fox
 ```./setup_scripts/incant.sh```
 
 # Within the docker container, run 
+
 ```source /opt/ros/foxy/setup.bash && cd /colcon_ws && colcon build && source /colcon_ws/install/setup.bash```
+
 ```. /install/venv_3.9/bin/activate && export CUVIS="Linux"# need to use the venv for cubert``` 
