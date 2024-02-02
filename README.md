@@ -15,8 +15,8 @@ You need docker working on your system, with a docker group.
 If you don't configure the docker group correctly, you will need sydo for the following commands
 # Installation
 
-Clone this repo onto your computer, and change the branch to foxy.
-```git clone git@github.com:RIVeR-Lab/cuvis.ros.git && cd cuvis.ros && git checkout foxy```
+Clone this repo onto your computer's ros workspace, and change the branch to foxy.
+```mkdir -p ~/colcon_ws/src && cd ~/colcon_ws/src && git clone git@github.com:RIVeR-Lab/cuvis.ros.git && cd cuvis.ros && git checkout foxy```
 
 ```./set_jumbo.sh # REBOOT HERE```
 
@@ -31,5 +31,5 @@ Clone this repo onto your computer, and change the branch to foxy.
 ```./setup_scripts/incant.sh```
 
 # Within the docker container, run 
-
+``````
 ```. /install/venv_3.9/bin/activate && export CUVIS="Linux"# need to use the venv for cubert``` 

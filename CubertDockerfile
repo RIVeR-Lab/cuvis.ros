@@ -44,6 +44,11 @@ RUN git clone https://github.com/cubert-hyperspectral/cuvis.pyil.git \
     && cd /install && git clone https://github.com/cubert-hyperspectral/cuvis.python.git \
     && python3.9 -m pip install /install/cuvis.python 
 
+# # ROS stuff
+# RUN mkdir -p /colcon_ws/src && source /opt/ros/foxy/setup.bash \
+#   && cd /colcon_ws/src \
+#   && git clone https://github.com/RIVeR-Lab/cuvis.ros.git && cd /colcon_ws/src/cuvis.ros & git checkout foxy \
+#   && cd /colcon_ws && colcon build
 # relevant packages now at /install/venv_3.9/lib/python3.9/site-packages
 
 # Create the "plant_dev" user
