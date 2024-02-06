@@ -80,7 +80,6 @@ cp cuvis_il.py <<PYTHON_LIB_LOCATION>>/lib/python3.9/site-packages/cuvis_il/
 Install the Python bindings
 
 ```
-python3.9 -m pip install .
 git clone git@github.com:cubert-hyperspectral/cuvis.python.git
 cd cuvis.python
 python3.9 -m pip install .
@@ -108,8 +107,6 @@ This step assumes there is already another ROS core instance running elsewhere.
 This is the file that should be edited to pass non-default arguments
 
 `roslaunch cuvis_ros hyper_driver.launch`
-
-``
 
 ### TODO
 
