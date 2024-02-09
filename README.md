@@ -18,11 +18,14 @@ If you don't configure the docker group correctly, you will need sydo for the fo
 Clone this repo onto your computer's ros workspace, and change the branch to foxy.
 ```mkdir -p ~/colcon_ws/src && cd ~/colcon_ws/src && git clone git@github.com:RIVeR-Lab/cuvis.ros.git && cd cuvis.ros && git checkout foxy```
 
-```./set_jumbo.sh # REBOOT HERE```
-
 ```./setup_scripts/install.sh```
 
 ```./setup_scripts/build.sh```
+
+<!-- ```ip link set $ETH_INTERNET_NAME mtu 9000
+#double check: 
+ip addr | grep mtu``` -->
+
 
 # Running
 
@@ -32,6 +35,6 @@ Clone this repo onto your computer's ros workspace, and change the branch to fox
 
 # Within the docker container, run 
 
-```source /opt/ros/foxy/setup.bash && cd /colcon_ws && colcon build && source /colcon_ws/install/setup.bash```
+```. ~/ros2_source_install/install/local_setup.bash && cd /colcon_ws && colcon build && source /colcon_ws/install/setup.bash```
 
-```. /install/venv_3.9/bin/activate && export CUVIS="Linux"# need to use the venv for cubert``` 
+'''.install/venv_3.9/bin/activate && export CUVIS="Linux"# need to use the venv for cubert``` 

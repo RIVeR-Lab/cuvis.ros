@@ -27,7 +27,8 @@ find_package(message_filters REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 install(PROGRAMS
-  src/ros_interface.py
+  scripts/ros2_interface.py
+  scripts/datacube_sub.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
