@@ -116,10 +116,10 @@ RUN . /install/venv_3.9/bin/activate && \
    # pip install rosidl_generator_c==3.1.5 && \
     pip install lark-parser && \
     cd /ros2_source_install/ && vcs import --input https://raw.githubusercontent.com/ros2/ros2/foxy/ros2.repos src && \
+    #apt install libboost-python-dev -y && \
+    #cd src && git clone https://github.com/ros-perception/vision_opencv.git -b foxy && cd /ros2_source_install/ && \
     apt upgrade -y && \
     rosdep init && \
     rosdep update && \
     rosdep install --from-paths src --ignore-src -y --skip-keys "fastcdr rti-connext-dds-5.3.1 urdfdom_headers" && \
     colcon build --packages-skip-by-dep python_qt_binding --symlink-install 
-
-RUN apt-get install ros-foxy-cv-bridge -y 
