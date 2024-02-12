@@ -26,8 +26,8 @@ find_package(message_filters REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 install(PROGRAMS
-  scripts/ros2_interface.py
-  scripts/datacube_sub.py
+ ${CMAKE_CURRENT_SOURCE_DIR}/scripts/ros2_interface.py
+ ${CMAKE_CURRENT_SOURCE_DIR}/scripts/datacube_sub.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
